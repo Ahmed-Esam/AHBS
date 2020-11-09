@@ -47,7 +47,7 @@ export class HeaderComponent implements OnInit {
       this.items = [...defaultItems];
   }
   ngOnInit(): void {
-    console.log('sssss')
+    console.log('aa')
   }
 
 }
