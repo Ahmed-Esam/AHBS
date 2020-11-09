@@ -1,0 +1,31 @@
+<header>
+  <div class="rowFlex h-content">
+    <div class="h-left">
+        <p>DOT<span>CARE</span></p>
+    </div>
+    <div class="h-right">
+      <div class="example-wrapper">
+        <kendo-dropdownlist
+            [value]="'En'"
+            [data]="listItems"
+            [valuePrimitive]="true"
+        >
+        </kendo-dropdownlist>
+      </div>
+
+      <p class="line"></p>
+      <div class="Avatar">
+        <div class="ImageAvater">
+          <img src="" alt="">
+        </div>
+        <div class="p-Avatar">
+          <p>Mohmuod Ali</p>
+          <p>Physician</p>
+        </div>
+      </div>
+    </div>
+  </div>
+  <nav>
+    <kendo-breadcrumb [items]="items" (itemClick)="onItemClick($event)"></kendo-breadcrumb>
+  </nav>
+</header>
