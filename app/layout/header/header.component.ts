@@ -40,6 +40,7 @@ export class HeaderComponent implements OnInit {
   public onItemClick(item: BreadCrumbItem): void {
       const index = this.items.findIndex(e => e.text === item.text);
       this.items = this.items.slice(0, index + 1);
+      console.log('HeaderComponent')
   }
 
   public refreshBreadCrumb(): void {
