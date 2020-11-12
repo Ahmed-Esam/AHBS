@@ -1,12 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 @import '~bootstrap/dist/css/bootstrap.min.css';
 
+// helpers
 @import 'app/style/helpers/variables';
 @import 'app/style/helpers/mixins';
 
+// component
+@import 'app/style/component/information';
 
+// layout
 @import 'app/style/layout/header';
 
+// shared
 @import 'app/style/shared/global';
 
 

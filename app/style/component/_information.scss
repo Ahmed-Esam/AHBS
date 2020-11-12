@@ -1,0 +1,6 @@
+.information{
+  .head-info{
+    @include prefix(display,flex, webkit ms);
+    @include prefix(justify-content,space-between, webkit ms);
+  }
+}

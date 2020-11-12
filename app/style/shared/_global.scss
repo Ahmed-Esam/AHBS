@@ -25,9 +25,10 @@ body {
     margin: auto;
     @media #{$minSmall} {
         width: 750px;
+
     }
     @media #{$minMedium} {
-        width: 970px;
+        width: 720px;
     }
     @media #{$minLarge} {
         width: 970px;
