@@ -23,15 +23,15 @@ body {
   .container{
     position: relative;
     margin: auto;
-    @media #{$minSmall} {
-        width: 750px;
+    @media #{$maxMobile} {
+        width: 540px;
 
     }
     @media #{$minMedium} {
         width: 720px;
     }
     @media #{$minLarge} {
-        width: 970px;
+        width: 960px;
     }
   }
   .container-fluid{width:100%;padding-right:15px;padding-left:15px;margin-right:auto;margin-left:auto;}
