@@ -2,25 +2,23 @@ import { Component, OnInit } from '@angular/core';
 import { BreadCrumbItem } from '@progress/kendo-angular-navigation';
 const defaultItems: BreadCrumbItem[] = [
   {
-      text: 'Home',
-      title: 'Home',
-      icon: 'home'
+      icon: 'home',
   },
   {
       text: 'Products',
-      title: 'Products'
+      title: 'Products',
   },
   {
       text: 'Computer peripherals',
-      title: 'Computer peripherals'
+      title: 'Computer peripherals',
   },
   {
       text: 'Keyboards',
-      title: 'Keyboards'
+      title: 'Keyboards',
   },
   {
       text: 'Gaming keyboards',
-      title: 'Gaming keyboards'
+      title: 'Gaming keyboards',
   }
 ];
 @Component({
@@ -37,14 +35,9 @@ export class HeaderComponent implements OnInit {
 
   public items: BreadCrumbItem[] = [...defaultItems];
 
-  public onItemClick(item: BreadCrumbItem): void {
-      const index = this.items.findIndex(e => e.text === item.text);
-      this.items = this.items.slice(0, index + 1);
-  }
 
-  public refreshBreadCrumb(): void {
-      this.items = [...defaultItems];
-  }
+
+
 
   ngOnInit(): void {
   }

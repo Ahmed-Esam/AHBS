@@ -1,5 +1,5 @@
 <header>
-  <div class="rowFlex h-content">
+  <div class="rowFlex h-content bg-first-header container-fluid">
     <div class="h-left">
         <p>DOT<span>CARE</span></p>
     </div>
@@ -26,6 +26,8 @@
     </div>
   </div>
   <nav>
-    <kendo-breadcrumb [items]="items" (itemClick)="onItemClick($event)"></kendo-breadcrumb>
+    <div  class="h-content">
+      <kendo-breadcrumb [items]="items" ></kendo-breadcrumb>
+    </div>
   </nav>
 </header>

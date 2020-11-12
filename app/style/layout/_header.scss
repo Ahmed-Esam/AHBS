@@ -1,0 +1,59 @@
+header {
+  .bg-first-header{background-color:#FFF;}
+  .h-content{
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    .h-left{
+      p{
+        color: $secondColor;
+        font-weight: bold;
+        font-size: 26px;
+        span{
+          color: $mainColor;
+        }
+      }
+
+    }
+    .h-right{
+      display: flex;
+      align-items: center;
+      .k-dropdown .k-dropdown-wrap,
+       .k-dropdowntree .k-dropdown-wrap{color: $mainColor;}
+      .k-dropdown .k-dropdown-wrap .k-select,
+      .k-dropdowntree .k-dropdown-wrap .k-select,.k-input {
+        background-color: #FFF !important;
+      }
+      .k-dropdown, .k-dropdowntree{
+        width: 40px;
+      }
+      .k-dropdown .k-dropdown-wrap, .k-dropdowntree .k-dropdown-wrap{
+        border: none;
+      }
+      .k-dropdown .k-dropdown-wrap .k-select,
+      .k-dropdowntree .k-dropdown-wrap .k-select {
+        padding: 0;
+        width: auto;
+      }
+      .line{}
+      .Avatar{
+        display: flex;
+        .ImageAvater{
+          width: 50px;
+          height: 50px;
+          background-color: #CCC;
+          border-radius: 50%;
+          margin-right: 10px;
+        }
+        .p-Avatar{
+          color: $mainColor;
+        }
+      }
+    }
+  }
+  .k-breadcrumb{
+    background-color:$mainColor;
+    border-radius:5px;
+    .k-breadcrumb-link,.k-breadcrumb-delimiter-icon,.k-breadcrumb-root-link{color: #FFF;}
+  }
+}

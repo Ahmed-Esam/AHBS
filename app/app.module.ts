@@ -10,12 +10,14 @@ import { HttpClientModule, HttpClientJsonpModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
 import { NavigationModule } from '@progress/kendo-angular-navigation';
 import { CommonModule } from '@angular/common';
+import { InformationComponent } from './components/information/information.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    HeaderComponent
+    HeaderComponent,
+    InformationComponent
   ],
   imports: [
     BrowserModule,
