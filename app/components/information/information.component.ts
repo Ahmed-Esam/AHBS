@@ -8,6 +8,13 @@ import { Component, OnInit } from '@angular/core';
 export class InformationComponent implements OnInit {
 
   constructor() { }
+  public listItems = ['X-Small', 'Small', 'Medium', 'Large', 'X-Large', '2X-Large'];
+    public date: Date;
+    public age: number;
+    public size: string;
+    public firstName = 'John';
+    public lastName = 'Doe';
+
 
   ngOnInit(): void {
   }

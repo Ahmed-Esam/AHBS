@@ -1,6 +1,105 @@
 .information{
+  padding: 20px 0;
   .head-info{
     @include prefix(display,flex, webkit ms);
     @include prefix(justify-content,space-between, webkit ms);
   }
+  .head-info{
+    border-bottom:1px solid#d7e4f1;
+    padding-bottom:10px;
+    margin-bottom: 20px;
+    .info-left{
+      p{
+        color: $mainColor;
+        @include prefix(display,flex, webkit ms);
+        i{
+          color: $secondColor;
+          font-size: 24px;
+          margin-right: 10px;
+        }
+      }
+    }
+    .info-right{
+      p {
+        color:#acbccd;
+        span{
+          color: #e5a863;
+          background-color:#f7ecdf ;
+          padding: 5px 15px;
+          border-radius: 10px;
+        }
+      }
+    }
+  }
+  .info-form{
+    .label-info{
+      color: #62819f;
+    }
+    .inputText{
+      width: 100%;
+      background-color: #eff2f5;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 6px;
+      font-size: 12px;
+    }
+    .inputText:focus {border:none !important;}
+    .inputText::placeholder{
+      color: #656565;
+    }
+    .k-datepicker{
+      width: 100%;
+      background-color: #eff2f5;
+      border: none;
+      border-radius: 6px;
+      font-size: 12px;
+      height: 38px;
+      .k-picker-wrap{
+          background-color: transparent;
+          border: none;
+          .k-dateinput-wrap{
+              background-color: transparent;
+              .k-input{
+                  border: none;
+                  height: 100%;
+                  padding: 10px 20px;
+              }
+          }
+          .k-select{
+            color: #0c3c6b;
+            border-radius: 0 10px 10px 0px;
+        }
+      }
+    }
+    .k-dropdown{
+      width: 100%;
+      background-color: #eff2f5;
+      border: none;
+      border-radius: 6px;
+      font-size: 12px;
+      height: 38px;
+     .k-dropdown-wrap{
+      border: none;
+      height: 100%;
+      background-color: #eff2f5;
+      border-radius: 6px;
+      background-image: none;
+      .k-input{
+          border: none;
+          padding: 10px 20px !important;
+          height: 100%;
+          color: #afb5b9;
+          background-color: #eff2f5;
+          padding: 0;
+      }
+      .k-select{
+        background-color: #e4edf6;
+        padding: 0 20px;
+        border-radius: 0 10px 10px 0px;
+      }
+      .k-icon{color: #0c3c6b;}
+     }
+  }
+  }
+
 }

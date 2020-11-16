@@ -1,0 +1,80 @@
+<div class="products">
+  <div class="container">
+    <div class="head-products">
+      <p>
+        <i class="fa fa-list-alt" aria-hidden="true"></i>
+        Products Details
+      </p>
+    </div>
+    <div class="content-products">
+      <button class="btn btn-primary mb-3">
+        <i class="fa fa-plus " aria-hidden="true"></i>
+        New Product
+      </button>
+      <div>
+        <kendo-grid
+          [data]="gridView"
+          [selectable]="true"
+          style="height:400px"
+
+        >
+        <kendo-grid-column field="ProductName" title="Product" [width]="300"></kendo-grid-column>
+        <kendo-grid-column field="ProductID" title="ID" [width]="50"></kendo-grid-column>
+        <kendo-grid-column field="UnitPrice" title="Unit Price" [width]="100"></kendo-grid-column>
+        <kendo-grid-column field="QuantityPerUnit" title="Qty Per Unit"></kendo-grid-column>
+        <ng-template kendoGridDetailTemplate let-dataItem>
+          <section *ngIf="dataItem.Category">
+            <h5>2020 | Panadol Double Extra</h5>
+            <button class="btn btn-primary mb-3">
+              <i class="fa fa-plus " aria-hidden="true"></i>
+              New Line
+            </button>
+            <!-- <p><strong>In Stock:</strong> {{dataItem.UnitsInStock}} units</p>
+            <p><strong>On Order:</strong> {{dataItem.UnitsOnOrder}} units</p>
+            <p><strong>Reorder Level:</strong> {{dataItem.ReorderLevel}} units</p>
+            <p><strong>Discontinued:</strong> {{dataItem.Discontinued}}</p>
+            <p><strong>Category:</strong> {{dataItem.Category?.CategoryName}} - {{dataItem.Category?.Description}}</p> -->
+            <table>
+              <tr>
+                <th>Company</th>
+                <th>Contact</th>
+                <th>Country</th>
+              </tr>
+              <tr>
+                <td>Alfreds Futterkiste</td>
+                <td>Maria Anders</td>
+                <td>Germany</td>
+              </tr>
+              <tr>
+                <td>Centro comercial Moctezuma</td>
+                <td>Francisco Chang</td>
+                <td>Mexico</td>
+              </tr>
+              <tr>
+                <td>Ernst Handel</td>
+                <td>Roland Mendel</td>
+                <td>Austria</td>
+              </tr>
+              <tr>
+                <td>Island Trading</td>
+                <td>Helen Bennett</td>
+                <td>UK</td>
+              </tr>
+              <tr>
+                <td>Laughing Bacchus Winecellars</td>
+                <td>Yoshi Tannamuri</td>
+                <td>Canada</td>
+              </tr>
+              <tr>
+                <td>Magazzini Alimentari Riuniti</td>
+                <td>Giovanni Rovelli</td>
+                <td>Italy</td>
+              </tr>
+            </table>
+          </section>
+        </ng-template>
+      </kendo-grid>
+      </div>
+    </div>
+  </div>
+</div>

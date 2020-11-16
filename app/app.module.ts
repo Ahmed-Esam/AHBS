@@ -11,13 +11,21 @@ import { FormsModule } from '@angular/forms';
 import { NavigationModule } from '@progress/kendo-angular-navigation';
 import { CommonModule } from '@angular/common';
 import { InformationComponent } from './components/information/information.component';
+import { LabelModule } from '@progress/kendo-angular-label';
+import { DateInputsModule } from '@progress/kendo-angular-dateinputs';
+import { ProductsComponent } from './components/products/products.component';
+import { GridModule } from '@progress/kendo-angular-grid';
+
+
+
 
 
 @NgModule({
   declarations: [
     AppComponent,
     HeaderComponent,
-    InformationComponent
+    InformationComponent,
+    ProductsComponent
   ],
   imports: [
     BrowserModule,
@@ -28,7 +36,10 @@ import { InformationComponent } from './components/information/information.compo
     DropDownsModule,
     AppRoutingModule,
     NavigationModule,
-    CommonModule
+    CommonModule,
+    LabelModule,
+    DateInputsModule,
+    GridModule
   ],
   providers: [],
   bootstrap: [AppComponent]
